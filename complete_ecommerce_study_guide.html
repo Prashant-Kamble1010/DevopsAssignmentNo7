@@ -1,0 +1,607 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:12px 0;font-family:var(--font-sans)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.tb{padding:7px 14px;border-radius:20px;border:1.5px solid var(--color-border-primary);background:var(--color-background-secondary);color:var(--color-text-secondary);cursor:pointer;font-size:12px;font-weight:500;transition:all .18s}
+.tb.on{background:#534AB7;color:#EEEDFE;border-color:#534AB7}
+.tb:hover:not(.on){border-color:#534AB7;color:#534AB7}
+.uc{display:none}.uc.on{display:block}
+.unit-title{font-size:15px;font-weight:500;color:var(--color-text-primary);margin-bottom:14px;padding:10px 14px;background:#EEEDFE;border-radius:var(--border-radius-lg);border-left:4px solid #534AB7}
+@media(prefers-color-scheme:dark){.unit-title{background:#26215C;color:#CECBF6}}
+.gc{border:1px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);margin-bottom:12px;overflow:hidden}
+.gh{background:var(--color-background-secondary);color:var(--color-text-primary);padding:11px 14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:500;user-select:none;gap:8px}
+.gh:hover{background:#EEEDFE}
+@media(prefers-color-scheme:dark){.gh:hover{background:#26215C}}
+.cv{font-size:11px;flex-shrink:0}
+.gb{padding:14px;background:var(--color-background-primary);display:none}
+.gb.op{display:block}
+.ql{font-size:10px;font-weight:500;color:#534AB7;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+@media(prefers-color-scheme:dark){.ql{color:#AFA9EC}}
+.qi{font-size:11px;color:var(--color-text-secondary);padding:3px 0 3px 8px;border-left:2px solid #AFA9EC;margin-bottom:3px;line-height:1.5}
+.al{font-size:10px;font-weight:500;color:#0F6E56;text-transform:uppercase;letter-spacing:.5px;margin:10px 0 5px}
+@media(prefers-color-scheme:dark){.al{color:#5DCAA5}}
+.ab{font-size:12.5px;color:var(--color-text-primary);line-height:1.75}
+.ab b{font-weight:500;color:#3C3489}
+@media(prefers-color-scheme:dark){.ab b{color:#AFA9EC}}
+.ab ul,.ab ol{padding-left:16px;margin:5px 0}
+.ab li{margin-bottom:3px}
+.tip{background:#E1F5EE;border-left:3px solid #1D9E75;border-radius:0 6px 6px 0;padding:7px 10px;margin-top:8px;font-size:11.5px;color:#085041}
+@media(prefers-color-scheme:dark){.tip{background:#085041;color:#9FE1CB;border-color:#5DCAA5}}
+.bdg{display:inline-block;font-size:9px;padding:1px 6px;border-radius:12px;margin-left:5px;font-weight:500;vertical-align:middle}
+.br{background:#E6F1FB;color:#0C447C}.bg{background:#EAF3DE;color:#27500A}.ba{background:#FAEEDA;color:#633806}.be{background:#FAECE7;color:#4A1B0C}.bc{background:#FBEAF0;color:#4B1528}
+@media(prefers-color-scheme:dark){.br{background:#0C447C;color:#B5D4F4}.bg{background:#27500A;color:#C0DD97}.ba{background:#633806;color:#FAC775}.be{background:#4A1B0C;color:#F5C4B3}.bc{background:#4B1528;color:#F4C0D1}}
+.qno{font-weight:500;color:#534AB7}
+@media(prefers-color-scheme:dark){.qno{color:#AFA9EC}}
+</style>
+<div class="wrap">
+<div class="tabs">
+  <button class="tb on" onclick="su(0)">Unit 1</button>
+  <button class="tb" onclick="su(1)">Unit 2</button>
+  <button class="tb" onclick="su(2)">Unit 3</button>
+  <button class="tb" onclick="su(3)">Unit 4</button>
+</div>
+
+<!-- ===== UNIT 1 ===== -->
+<div class="uc on" id="u0">
+<div class="unit-title">📘 Unit 1 — Introduction to E-commerce (Q1–Q30)</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 1 — Definition, Purpose & Basics of E-commerce <span class="cv">▼</span></div>
+<div class="gb op">
+<div class="ql">Q7, Q2, Q20, Q24, Q25, Q29</div>
+<div class="qi"><span class="qno">Q7</span> Define E-commerce and explain its basic purpose <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q2</span> Identify two limitations of E-commerce <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q20</span> List four benefits of E-commerce for customers <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q24</span> Differentiate traditional commerce vs E-commerce (2 points) <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q25</span> How Internet contributed to growth of E-commerce in India <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q29</span> How E-commerce benefits sellers vs traditional retail <span class="bdg br">Understand</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>E-commerce Definition:</b> Buying and selling of goods/services over the Internet or electronic networks without physical store presence. Purpose: enable 24/7 global trade, cut operational costs, and eliminate geographic barriers.<br><br>
+<b>4 Benefits for Customers:</b>
+<ul><li>Shop anytime, anywhere (24/7)</li><li>Easy price comparison across sellers</li><li>Wide variety of products at one place</li><li>Home delivery and easy returns</li></ul>
+<b>2 Limitations:</b>
+<ul><li>Security risks (payment fraud, data theft)</li><li>Lack of physical product experience (can't touch/feel before buying)</li></ul>
+<b>Traditional vs E-commerce (2 points):</b><br>
+• Store hours: Traditional = fixed hours | E-commerce = 24/7<br>
+• Reach: Traditional = local | E-commerce = global<br><br>
+<b>Internet's Role in India:</b> Jio revolution (2016) made cheap mobile data available → 750M+ internet users → platforms like Flipkart, Amazon India, Meesho exploded. Digital India + UPI enabled cashless payments.<br><br>
+<b>Sellers' Benefits over Traditional Retail:</b> No store rent, global reach, 24/7 sales, data analytics to understand customers, automated inventory, targeted digital marketing.
+<div class="tip">💡 Always give Indian examples — Flipkart, Meesho, Amazon India, OLX.</div>
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 2 — E-commerce Business Models (B2B, B2C, C2C, C2B) <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q4, Q9, Q22, Q23, Q26, Q27, Q28, Q12, Q13, Q14</div>
+<div class="qi"><span class="qno">Q22</span> What is B2B? Give one example <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q23</span> What is B2C? Give one real-world example <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q4</span> Define C2C with an example <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q26</span> Explain C2B model with example <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q27</span> How E-commerce helps businesses reach global markets <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q28</span> How C2C platforms like OLX/eBay create value for users <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q9</span> Compare B2B vs B2C (customers, transaction size, marketing) <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q12</span> Farmer sells to restaurants via online platform — identify model <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q13</span> Freelancers sell services to companies — identify model <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q14</span> Small clothing store wants to sell online — which model? <span class="bdg bg">Apply</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>B2B (Business-to-Business):</b> Transactions between two businesses. Example: IndiaMart — raw material suppliers sell to manufacturers. Large transaction size, long-term contracts, relationship-based marketing.<br><br>
+<b>B2C (Business-to-Consumer):</b> Business sells directly to end customers. Example: Amazon, Flipkart. High volume, smaller transactions, emotional/mass advertising.<br><br>
+<b>C2C (Consumer-to-Consumer):</b> Consumers sell to each other via a platform. Example: OLX, eBay — buy/sell used goods. Platform earns via listing fees or commissions. Value to users: buyers get cheap goods, sellers earn from unused items, platform provides trust/safety.<br><br>
+<b>C2B (Consumer-to-Business):</b> Individual offers product/service to a business. Example: Photographer selling stock photos to company on Shutterstock; freelancers on Upwork/Fiverr.<br><br>
+<b>B2B vs B2C Comparison:</b>
+<ul><li>Customers: B2B = businesses | B2C = individual consumers</li><li>Transaction size: B2B = large/bulk | B2C = small/individual</li><li>Marketing: B2B = negotiation/relationship | B2C = mass ads, emotional appeal</li><li>Decision-making: B2B = slow, committee | B2C = fast, impulsive</li></ul>
+<b>Global Reach via E-commerce:</b> A small artisan in Rajasthan can sell handicrafts worldwide via Amazon Global, Etsy. No need for physical export setup — just list online, ship via courier.<br><br>
+<b>Q12 Answer:</b> C2B — Farmer (consumer/individual) selling directly to restaurants (business).<br>
+<b>Q13 Answer:</b> C2B — Freelancers (consumers) offering services to companies (businesses).<br>
+<b>Q14 Answer:</b> B2C — Clothing store should sell directly to end customers online via Shopify or Meesho.
+<div class="tip">💡 Memory trick: Arrow shows who sells TO whom. B→C = Business to Consumer.</div>
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 3 — Analyze & Evaluate E-commerce Impact <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q1, Q3, Q5, Q8, Q10, Q11, Q18, Q19</div>
+<div class="qi"><span class="qno">Q1</span> Role of Internet in expanding small businesses in India through E-commerce <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q3</span> If Internet becomes slow/unreliable in India — predict effect on E-commerce <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q5</span> How data privacy concerns could limit E-commerce growth <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q8</span> Challenges faced by industries when adopting E-commerce <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q10</span> How customer reviews influence E-commerce platforms <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q11</span> If rural Internet penetration increases — impact on E-commerce <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q18</span> Long-term opportunities for Indian industries using E-commerce <span class="bdg be">Evaluate</span></div>
+<div class="qi"><span class="qno">Q19</span> Can E-commerce completely replace physical retail stores? Justify. <span class="bdg be">Evaluate</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Q1 — Internet & Small Businesses:</b> Internet enabled small businesses to open online stores at low cost (Shopify, Meesho), accept UPI payments, reach pan-India customers, use social media for free marketing, and partner with logistics (Delhivery, Shiprocket).<br><br>
+<b>Q3 — If Internet Becomes Slow:</b> Order processing delays, payment gateway failures, logistics tracking breaks down, streaming ads fail, real-time inventory management stops. The entire E-commerce ecosystem — from ordering to delivery — depends on reliable internet.<br><br>
+<b>Q5 — Data Privacy Limiting E-commerce:</b> Customers fear card data, address, and browsing history being misused → reduced trust → fewer online purchases. Data breaches (like payment gateway hacks) cause mass customer loss. GDPR/PDPB compliance increases costs for businesses.<br><br>
+<b>Q8 — Challenges in Adopting E-commerce:</b>
+<ul><li>High initial setup cost (website, payment gateway, logistics)</li><li>Cybersecurity threats and fraud</li><li>Lack of technical knowledge in traditional businesses</li><li>Competition from large players (Amazon, Flipkart)</li><li>Customer trust and return/refund management</li></ul>
+<b>Q10 — Customer Reviews Influence:</b> Positive reviews = higher conversions (93% buyers read reviews before purchase). Negative reviews = loss of sales and reputation. Platforms use ratings to rank products — better reviews = higher visibility = more sales. Reviews also guide product improvement.<br><br>
+<b>Q11 — Rural Internet → E-commerce:</b> More users = more buyers. Farmers can sell directly (AgriTech like AgroStar). Local artisans reach global markets. Digital payments (UPI) already work in rural India. Government schemes (PMGDISHA) accelerating digital literacy.<br><br>
+<b>Q18 — Long-term Opportunities for India:</b> India E-commerce projected at $300B+ by 2030. Tier-2/3 cities are new growth markets. Sectors: AgriTech, HealthTech, EdTech, logistics, fintech all growing via E-commerce rails.<br><br>
+<b>Q19 — Can E-commerce Replace Physical Stores?</b> Partially. E-commerce excels in: electronics, books, fashion, travel booking. Physical stores still needed for: groceries (immediate need), luxury (touch/feel), services (salon, hospital). Future = hybrid O2O (Online to Offline) model. Complete replacement is unlikely.
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 4 — YouTube Revenue Model <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q16, Q17, Q21, Q30</div>
+<div class="qi"><span class="qno">Q21</span> List three revenue sources of YouTube <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q30</span> How YouTube earns from advertising and premium subscriptions <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q16</span> If YouTube loses advertising revenue — propose two alternative revenue sources <span class="bdg bc">Create</span></div>
+<div class="qi"><span class="qno">Q17</span> Compare YouTube vs Netflix/Instagram revenue model — which is more sustainable? <span class="bdg be">Evaluate</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>YouTube's 3 Revenue Sources:</b>
+<ul><li><b>Advertising (AdSense):</b> Ads before/during/after videos — primary source (~80% revenue)</li><li><b>YouTube Premium:</b> ₹139/month subscription — ad-free, background play, offline downloads</li><li><b>Channel Memberships & Super Chat:</b> Fans pay creators during live streams; YouTube takes a percentage</li></ul>
+<b>How Advertising Works:</b> Advertisers pay per view/click via Google Ads. YouTube shares ~55% with creators, keeps ~45%. Types: skippable ads, non-skippable ads, banner ads, sponsored cards.<br><br>
+<b>Q16 — If Advertising Lost:</b>
+<ul><li>Scale up Premium subscription with exclusive original content (like Netflix model)</li><li>Introduce pay-per-view for live events, concerts, live sports streaming</li></ul>
+<b>Q17 — YouTube vs Netflix:</b><br>
+YouTube: Free + ad-supported + user-generated content (zero production cost) + Premium option.<br>
+Netflix: 100% subscription-based, heavy content production spend ($17B/year).<br>
+<b>Verdict:</b> YouTube is MORE sustainable — diversified income (ads + premium + memberships), zero content cost (creators pay themselves), 2.7 billion users vs Netflix's 270 million. Netflix risks subscriber fatigue.
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 5 — Create & Design Questions (Unit 1) <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q6, Q15</div>
+<div class="qi"><span class="qno">Q6</span> Design a new E-commerce business idea using any one model (B2B/B2C/C2C/C2B). Explain revenue generation. <span class="bdg bc">Create</span></div>
+<div class="qi"><span class="qno">Q15</span> Design a platform concept combining B2C and C2C models <span class="bdg bc">Create</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Q6 — New E-commerce Business Idea (C2B model):</b><br>
+<b>Name:</b> "SkillBridge" — Platform where students and freelancers offer micro-services (logo design, content writing, video editing) to small businesses.<br>
+<b>Revenue model:</b> 15% commission per transaction + premium featured profile listings + business subscription plans for unlimited hiring.<br><br>
+<b>Q15 — B2C + C2C Combined Platform:</b><br>
+<b>Name:</b> "ReStyle" — Fashion marketplace with two sections:<br>
+<ul><li><b>B2C section:</b> Brands sell new clothing directly to customers</li><li><b>C2C section:</b> Users sell their used/old clothing to other users</li></ul>
+<b>Revenue:</b> Commission from brand sales (B2C) + listing fees from individual sellers (C2C) + premium delivery and authentication services.
+</div>
+</div>
+</div>
+
+</div><!-- end unit 1 -->
+
+<!-- ===== UNIT 2 ===== -->
+<div class="uc" id="u1">
+<div class="unit-title">📗 Unit 2 — E-marketing, M-commerce & Mobile Payments (Q1–Q30)</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 1 — E-marketing: Definition, Concept & Comparison with Traditional Marketing <span class="cv">▼</span></div>
+<div class="gb op">
+<div class="ql">Q6, Q8, Q11, Q12, Q20, Q2</div>
+<div class="qi"><span class="qno">Q6</span> Define E-marketing <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q8</span> List two differences between Traditional Marketing and E-Marketing <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q11</span> Explain the concept of E-marketing in modern business <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q12</span> Describe how E-marketing differs from traditional marketing methods <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q20</span> Compare Traditional vs E-Marketing (cost, reach, effectiveness) <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q2</span> Evaluate: Is E-marketing more effective than traditional for small businesses? <span class="bdg be">Evaluate</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>E-marketing Definition:</b> Use of digital technologies — Internet, social media, email, mobile apps — to promote products/services and reach target customers online.<br><br>
+<b>Traditional vs E-Marketing (Detailed Comparison):</b>
+<ul>
+<li><b>Cost:</b> Traditional (TV/newspaper) = very expensive (lakhs) | E-marketing = low (Facebook ads start at ₹100)</li>
+<li><b>Reach:</b> Traditional = local/regional | E-marketing = global</li>
+<li><b>Targeting:</b> Traditional = broad mass audience | E-marketing = precise (age, location, interests, behavior)</li>
+<li><b>Measurability:</b> Traditional = hard to measure ROI | E-marketing = real-time analytics (clicks, conversions, impressions)</li>
+<li><b>Interactivity:</b> Traditional = one-way communication | E-marketing = two-way (comments, reviews, chats)</li>
+<li><b>Speed:</b> Traditional = weeks of production | E-marketing = live within hours</li>
+</ul>
+<b>Is E-marketing Better for Small Businesses?</b> Yes — lower cost, precise targeting, measurable results, and level playing field with large companies. A small bakery can reach 10,000 local customers via Instagram for ₹2,000. Traditional media would cost lakhs for same reach.
+<div class="tip">💡 Always write at least 3-4 comparison points for analyze questions.</div>
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 2 — E-marketing Apply Questions (Small Business, Startup, Social Media, Strategy) <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q3, Q17, Q18, Q29</div>
+<div class="qi"><span class="qno">Q3</span> A small restaurant wants to promote online — explain how it can use E-marketing tools <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q17</span> Show how E-marketing helps a new startup reach customers faster than traditional marketing <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q18</span> How a business could use social media marketing as part of E-marketing <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q29</span> Design a simple E-marketing strategy for a new online clothing store <span class="bdg bc">Create</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Q3 — Restaurant Online Promotion:</b>
+<ul><li>Create Google My Business listing (appears on Google Maps)</li><li>Run Instagram/Facebook ads targeting 5km radius</li><li>List on Zomato/Swiggy for food delivery orders</li><li>Post daily food photos with local hashtags (#PuneFoods)</li><li>WhatsApp Broadcast List for regular customers with daily specials</li></ul>
+<b>Q17 — Startup Reaching Customers Faster:</b> A new app launch can use targeted Facebook ads to reach 10,000 users for ₹5,000 within 48 hours — impossible via newspaper/TV in same time/cost. SEO can get Google visibility within weeks. Influencer post can go viral overnight.<br><br>
+<b>Q18 — Social Media as E-marketing:</b> Post engaging content daily, run paid ads with audience targeting, collaborate with influencers, respond to comments (engagement builds trust), use Stories for limited-time offers, run contests to increase followers, use WhatsApp Business for direct customer communication.<br><br>
+<b>Q29 — E-marketing Strategy for Clothing Store:</b>
+<ul><li><b>SEO:</b> Optimize for "buy women's kurta online India"</li><li><b>Instagram:</b> Daily Reels showing outfits, weekly giveaways</li><li><b>Google Ads:</b> Shopping ads for product visibility</li><li><b>Email Marketing:</b> Weekly newsletter — new arrivals + sale alerts</li><li><b>Influencer:</b> Partner with 3 micro-influencers (10K-50K followers)</li><li><b>WhatsApp:</b> Catalogue sharing and order taking</li><li><b>Loyalty:</b> Reward points for repeat customers via app</li></ul>
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 3 — Mobile Commerce (M-commerce) <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q7, Q1, Q13, Q16, Q24, Q25, Q26, Q28</div>
+<div class="qi"><span class="qno">Q7</span> What is Mobile Commerce (M-commerce)? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q1</span> Explain how mobile commerce supports online shopping through smartphones <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q13</span> Discuss the impact of E-commerce on traditional markets <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q16</span> How a clothing store could use mobile commerce to increase sales <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q24</span> Compare global mobile commerce growth with traditional online commerce <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q25</span> Analyze technical challenges businesses face when adopting M-commerce platforms <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q26</span> Assess the importance of security in mobile commerce systems <span class="bdg be">Evaluate</span></div>
+<div class="qi"><span class="qno">Q28</span> Judge whether mobile commerce will dominate future online transactions <span class="bdg be">Evaluate</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>M-commerce Definition:</b> Conducting commercial transactions (buying, selling, banking, booking) using mobile devices (smartphones, tablets) via apps or mobile browser.<br><br>
+<b>How M-commerce Supports Shopping:</b>
+<ul><li>Apps like Amazon, Meesho provide one-tap buying</li><li>Push notifications alert users about deals and offers</li><li>QR code scanning for quick product info or payments</li><li>GPS enables hyperlocal shopping (Swiggy, Dunzo, Blinkit)</li><li>Integrated UPI/Wallet for instant payment without card entry</li></ul>
+<b>Q13 — E-commerce Impact on Traditional Markets:</b> Malls see less footfall, local shops lose customers to Amazon/Flipkart, travel agents replaced by MakeMyTrip/Yatra, video rental shops replaced by OTT. However, grocery stores and service businesses (salons, restaurants) have survived by going digital (Swiggy, UrbanClap).<br><br>
+<b>Clothing Store using M-commerce:</b> Launch Instagram Shop + WhatsApp catalogue + mobile app with size guides and AR try-on → accept UPI → send push notifications for flash sales.<br><br>
+<b>M-commerce vs Traditional E-commerce (Desktop):</b>
+<ul><li>In India, 85%+ internet users access via mobile — M-commerce dominates</li><li>Mobile enables location-based offers — not possible on desktop</li><li>App purchases convert better than mobile browsers</li><li>UPI/Wallets are mobile-first — encourage M-commerce</li></ul>
+<b>Technical Challenges:</b> Small screen UI design, slow 3G in rural areas, battery/data consumption, app compatibility across Android versions, security of mobile payment apps.<br><br>
+<b>Will M-commerce Dominate?</b> Yes — UPI transactions cross 10 billion/month. India's 800M+ smartphone users shop via mobile. AR shopping, voice commerce (Alexa), and super-apps (like WeChat) will further push M-commerce. Desktop E-commerce will become secondary.
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 4 — Mobile Payments <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q5, Q9, Q4, Q14, Q22, Q27</div>
+<div class="qi"><span class="qno">Q5</span> Name two examples of mobile payment systems <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q9</span> What are mobile payments? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q4</span> Explain how a customer completes a purchase using mobile payments <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q14</span> Explain why mobile payments are becoming popular worldwide <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q22</span> Examine the security challenges associated with mobile payments <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q27</span> Evaluate the advantages and risks of mobile payments for consumers <span class="bdg be">Evaluate</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Mobile Payments:</b> Digital payments made using smartphones via apps, QR codes, NFC (tap-to-pay), or wallets to pay for goods/services or transfer money.<br><br>
+<b>Two Examples:</b> Google Pay (GPay), PhonePe | Also: Paytm, Apple Pay, Samsung Pay, BHIM UPI<br><br>
+<b>Q4 — Purchase using Mobile Payment (Step-by-step):</b>
+<ol><li>Customer adds product to cart on app</li><li>Proceeds to checkout, selects UPI/wallet payment</li><li>App generates payment request or shows QR code</li><li>Customer enters UPI PIN or authenticates via fingerprint</li><li>Payment gateway processes → bank verifies funds</li><li>Confirmation received → order placed automatically</li></ol>
+<b>Why Mobile Payments are Popular:</b> Faster than cash/card, no need to carry physical wallet, real-time tracking, cashback/rewards, government push for digital India, UPI is free and instant 24/7.<br><br>
+<b>Security Challenges:</b>
+<ul><li>Phishing attacks — fake SMS/emails stealing OTPs</li><li>SIM swap fraud — hacker gets new SIM on victim's number</li><li>Malware apps that mimic real payment apps</li><li>Man-in-the-middle attacks on public Wi-Fi</li><li>Weak PINs or sharing OTPs with scammers</li></ul>
+<b>Advantages:</b> Fast, cashless, spending tracker, offers/cashback, biometric security, accessible 24/7.<br>
+<b>Risks:</b> Phone loss = wallet loss, technical glitches during transactions, over-reliance on internet.
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 5 — Shopify as E-commerce Platform <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q10, Q15, Q19, Q30, Q21</div>
+<div class="qi"><span class="qno">Q10</span> What is Shopify in the context of E-commerce? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q15</span> Describe the basic idea behind Shopify as an E-commerce platform <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q21</span> Analyze how E-commerce has changed consumer behavior in modern markets <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q19</span> Demonstrate how an entrepreneur could launch an online store using Shopify <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q30</span> Create your own E-commerce business model using Shopify <span class="bdg bc">Create</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Shopify:</b> A cloud-based SaaS (Software as a Service) E-commerce platform that allows anyone to create and manage an online store without coding. It provides templates, payment integration, inventory tools, shipping management, and analytics.<br><br>
+<b>Q19 — Launching on Shopify (Steps):</b>
+<ol><li>Sign up at shopify.com, choose pricing plan (Basic/Shopify/Advanced)</li><li>Select a store theme/template from Shopify Theme Store</li><li>Add products — photos, descriptions, variants (size/color), pricing</li><li>Set up payment gateway (Razorpay for India, Stripe, PayPal)</li><li>Configure shipping zones and delivery rates</li><li>Buy/connect a domain name (e.g., mybrand.com)</li><li>Go live and start marketing via social media and Google</li></ol>
+<b>Q21 — E-commerce Changed Consumer Behavior:</b>
+<ul><li>Consumers now compare prices before buying (price consciousness)</li><li>Reviews and ratings heavily influence purchase decisions</li><li>Impulse buying increased due to one-click purchases and easy EMI</li><li>Expectation of fast delivery (same-day/next-day)</li><li>Preference for personalized recommendations (Amazon's "You may also like")</li></ul>
+<b>Q30 — Complete Shopify Business Model:</b><br>
+<b>Business:</b> "GreenGlow" — Organic skincare products<br>
+<b>Products:</b> Face wash, moisturiser, sunscreen (all-natural, no chemicals)<br>
+<b>Target Customers:</b> Women aged 20–40 who prefer chemical-free products<br>
+<b>Marketing:</b> Instagram Reels + Google ads + influencer collaborations with wellness bloggers<br>
+<b>Payment:</b> Razorpay (UPI, cards, EMI, net banking)<br>
+<b>Revenue:</b> Direct product sales + monthly subscription skincare kit box (₹999/month)
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 6 — Analyze & Evaluate E-marketing / M-commerce (Q23) <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q23</div>
+<div class="qi"><span class="qno">Q23</span> Analyze the major issues faced by companies when implementing E-marketing strategies <span class="bdg ba">Analyze</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Major Issues in Implementing E-marketing:</b>
+<ul>
+<li><b>Ad fatigue:</b> Customers see too many ads and start ignoring them (banner blindness)</li>
+<li><b>Data privacy regulations:</b> GDPR, IT Act — companies must get consent before using customer data for targeting</li>
+<li><b>Algorithm changes:</b> Google/Instagram algorithm updates can suddenly reduce organic reach, affecting content strategies</li>
+<li><b>Content creation overload:</b> Consistently creating quality content for multiple platforms is expensive and time-consuming</li>
+<li><b>ROI measurement complexity:</b> Attributing sales to the right marketing channel is difficult in multi-channel campaigns</li>
+<li><b>Competition:</b> Low entry barrier means every competitor is also doing digital marketing — standing out is harder</li>
+<li><b>Fake reviews and influencer fraud:</b> Paid fake reviews mislead customers; influencers with fake followers waste marketing budget</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div><!-- end unit 2 -->
+
+<!-- ===== UNIT 3 ===== -->
+<div class="uc" id="u2">
+<div class="unit-title">📙 Unit 3 — E-payment Systems & Security (Q1–Q29)</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 1 — E-payment Systems: Definition, Types, Requirements <span class="cv">▼</span></div>
+<div class="gb op">
+<div class="ql">Q6, Q7, Q8, Q9, Q11, Q12, Q13, Q14</div>
+<div class="qi"><span class="qno">Q6</span> What are digital payment requirements? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q7</span> What is a digital token-based E-payment system? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q8</span> What is a credit card as an E-payment system? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q9</span> What are mobile payments? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q11</span> Explain the concept of E-payment systems <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q12</span> Describe the working of digital token-based payment systems <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q13</span> Explain the benefits of E-payment systems for buyers <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q14</span> Explain the benefits of E-payment systems for sellers <span class="bdg br">Understand</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>E-payment Systems:</b> Electronic methods of paying for goods/services without physical cash. Types: UPI, credit/debit cards, net banking, digital wallets (Paytm), digital tokens, cryptocurrency.<br><br>
+<b>Digital Payment Requirements:</b>
+<ul><li>Stable Internet connection</li><li>Bank account linked to payment method</li><li>Registered mobile number for OTP authentication</li><li>Secure payment gateway on seller side (SSL certificate)</li><li>Device (smartphone/computer) with payment app installed</li></ul>
+<b>Credit Card:</b> A card issued by a bank allowing user to borrow up to a credit limit for purchases, repaid later (monthly). Online: card number + expiry + CVV + OTP used for authentication. Provides purchase protection and chargeback rights.<br><br>
+<b>Mobile Payments:</b> Payments made via smartphone apps using UPI, NFC, QR codes, or wallets. Examples: Google Pay, PhonePe, Paytm.<br><br>
+<b>Digital Token-based Payment System:</b> A system where a unique digital token (encrypted one-time code) replaces the actual card number for each transaction. Even if intercepted, the token is useless as it cannot be reused. Example: Apple Pay/Google Pay use tokenization — merchant never sees your actual card number. Steps: Card registered → token generated by bank → token sent to merchant → bank validates token → payment approved.<br><br>
+<b>Benefits for Buyers:</b>
+<ul><li>No need to carry cash</li><li>Faster checkout experience</li><li>Easy tracking of all transactions</li><li>Reward points and cashback offers</li><li>Fraud protection and chargeback rights</li><li>Shop globally without currency conversion hassle</li></ul>
+<b>Benefits for Sellers:</b>
+<ul><li>Instant payment confirmation</li><li>Reduced cash handling costs and theft risk</li><li>Automatic bookkeeping and reconciliation</li><li>Accept payments from global customers</li><li>Reduced checkout abandonment vs cash-only</li></ul>
+<div class="tip">💡 Tokenization is a key concept — real card number replaced by token that is useless if stolen.</div>
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 2 — Security: Firewall, Viruses, Threats <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q10, Q2, Q4, Q16, Q17, Q19, Q21, Q24, Q25, Q27</div>
+<div class="qi"><span class="qno">Q10</span> What is a firewall? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q4</span> Explain the importance of security in E-commerce <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q2</span> Analyze the role of firewalls in maintaining system integrity <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q16</span> Demonstrate how a firewall protects a system in E-commerce <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q17</span> Apply virus protection techniques to secure an online business <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q19</span> Explain how an E-commerce website ensures safe transactions <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q21</span> Examine different types of threats (viruses, intruders) in E-commerce <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q24</span> Analyze how SPAM can be used for internet stock fraud <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q25</span> Assess the importance of cybersecurity measures in E-commerce systems <span class="bdg be">Evaluate</span></div>
+<div class="qi"><span class="qno">Q27</span> Judge the effectiveness of firewalls and antivirus in preventing cyber attacks <span class="bdg be">Evaluate</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Firewall:</b> A security system (hardware or software) that monitors and controls incoming and outgoing network traffic based on predefined rules. Acts as a barrier between trusted internal network and untrusted Internet.<br><br>
+<b>Importance of Security:</b> Without security, customer data (name, address, payment info) gets stolen → fraud → loss of trust → legal penalties → business closure. Security = customer confidence = business survival.<br><br>
+<b>How Firewall Protects E-commerce (Role in System Integrity):</b>
+<ul><li>Blocks unauthorized access attempts to company servers</li><li>Filters malicious IP addresses and suspicious traffic patterns</li><li>Prevents DDoS attacks (flooding servers to crash the site)</li><li>Monitors data packets and stops SQL injection attacks</li><li>Creates detailed logs of all traffic for security auditing</li><li>Separates public-facing web servers from sensitive backend databases</li></ul>
+<b>Virus Protection Techniques:</b>
+<ul><li>Install and regularly update antivirus software (Kaspersky, Norton)</li><li>Schedule automatic system scans (daily/weekly)</li><li>Keep OS and all software patched and up-to-date</li><li>Never download files/software from unknown sources</li><li>Enable email spam and phishing filters</li><li>Use HTTPS and valid SSL certificates on all E-commerce pages</li><li>Train employees to recognize phishing emails</li></ul>
+<b>How E-commerce Website Ensures Safe Transactions:</b> SSL/TLS encryption (HTTPS), two-factor authentication (OTP), tokenization of card data, PCI-DSS compliance, regular security audits, CAPTCHA to prevent bots, session timeout after inactivity.<br><br>
+<b>Types of Threats:</b>
+<ul><li><b>Viruses/Malware:</b> Software that damages systems or steals data silently</li><li><b>Phishing:</b> Fake emails/websites that trick users into revealing passwords/OTPs</li><li><b>Intruders/Hackers:</b> Unauthorized access to steal customer databases or payment info</li><li><b>Man-in-the-middle:</b> Intercepting communication between buyer and seller</li><li><b>Ransomware:</b> Encrypts business data and demands payment to unlock</li></ul>
+<b>Q24 — SPAM and Stock Fraud (Pump & Dump):</b> Fraudsters send mass SPAM emails claiming a small company's stock will skyrocket (false news). Gullible investors buy → price rises → fraudsters sell their shares at profit → price crashes → investors lose money. This is illegal market manipulation.<br><br>
+<b>Effectiveness of Firewalls + Antivirus:</b> Together they provide layered security — firewall blocks external threats from entering, antivirus handles internal threats already in the system. However, zero-day exploits and social engineering (tricking people) can bypass both — human training and behavior is equally critical.
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 3 — Apply: Credit Card, Mobile Payment, Token Transactions <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q1, Q5, Q15, Q18</div>
+<div class="qi"><span class="qno">Q1</span> Describe how credit cards function in online transactions <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q5</span> Show how a customer makes an online payment using a credit card <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q15</span> Explain how mobile payments are used in everyday transactions <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q18</span> Show how digital token systems can be used in secure payments <span class="bdg bg">Apply</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Credit Card Online Transaction Flow (Q1 & Q5):</b>
+<ol><li>Customer enters card number, expiry date, CVV on checkout page (SSL encrypted)</li><li>Data sent to merchant's payment gateway (e.g., Razorpay)</li><li>Gateway forwards to card network (Visa/Mastercard/RuPay)</li><li>Card network checks with issuing bank — verifies available credit limit</li><li>Bank sends OTP to registered mobile for 2-Factor Authentication</li><li>Customer enters OTP → bank approves/declines</li><li>Confirmation sent back through gateway → merchant → customer</li><li>Settlement happens within 1-2 business days to merchant's account</li></ol>
+<b>Mobile Payments in Everyday Transactions (Q15):</b>
+<ul><li>Grocery store: Scan QR code at checkout → pay via GPay</li><li>Auto rickshaw: Show QR code → driver scans → payment received</li><li>Online food: Open Swiggy → select food → pay via UPI in one click</li><li>Utility bills: Electricity/water bills paid via Paytm without visiting office</li><li>Movie tickets: BookMyShow app → UPI payment → e-ticket on phone</li></ul>
+<b>Digital Token in Secure Payments (Q18):</b>
+<ol><li>User registers credit card in Google Pay app</li><li>Bank generates a unique token (e.g., 4815 XXXX XXXX 3271) to represent the real card</li><li>Token stored on phone; real card number never on device</li><li>At payment: token sent to merchant instead of real card number</li><li>Merchant sends token to bank; bank validates → approves payment</li><li>If merchant gets hacked: only useless token is stolen, not real card data</li></ol>
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 4 — Analyze & Evaluate Payment Security <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q3, Q20, Q22, Q23, Q26</div>
+<div class="qi"><span class="qno">Q3</span> Evaluate effectiveness of E-payment systems vs traditional payment methods <span class="bdg be">Evaluate</span></div>
+<div class="qi"><span class="qno">Q20</span> Analyze the security risks involved in E-payment systems <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q22</span> Analyze the challenges in implementing secure mobile payment systems <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q23</span> Compare credit card payments vs mobile payments (security + convenience) <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q26</span> Evaluate the risks and benefits of using credit cards for online transactions <span class="bdg be">Evaluate</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Q3 — E-payment vs Traditional Payment:</b>
+<ul><li>Speed: E-payment = instant 24/7 | Cheque = 2-3 business days</li><li>Cost: E-payment = minimal transaction fee | Traditional = handling + bank charges</li><li>Reach: E-payment = global | Traditional = limited to bank hours and geography</li><li>Security: E-payment = OTP + encryption | Traditional = signature forgery risk</li><li>Convenience: E-payment = from anywhere | Traditional = must visit bank/ATM</li></ul>
+<b>Q20 — Security Risks in E-payment:</b>
+<ul><li>Phishing — fake emails stealing login credentials</li><li>Card skimming — card details copied at compromised terminals</li><li>Identity theft — using stolen personal data to make fraudulent payments</li><li>Account takeover — hacker gains access to payment account via stolen credentials</li><li>Insecure networks — transactions on public Wi-Fi can be intercepted</li></ul>
+<b>Q22 — Challenges in Secure Mobile Payments:</b> Inconsistent internet connectivity, device loss/theft, OS vulnerabilities in older Android versions, fake payment apps on unofficial app stores, difficulty in multi-factor authentication on small screens.<br><br>
+<b>Q23 — Credit Card vs Mobile Payment:</b>
+<ul><li><b>Security:</b> Both use OTP; mobile adds biometric fingerprint. Credit cards have chargeback protection for disputes. Mobile risk: phone loss = payment risk.</li><li><b>Convenience:</b> Mobile (UPI/QR) = faster at PoS | Credit card = needs swiping or online card entry</li><li><b>Cost:</b> UPI/Mobile payments = free in India | Credit cards have annual fees and interest if unpaid</li><li><b>Acceptance:</b> UPI accepted almost everywhere in India now | Credit cards not accepted by all small vendors</li></ul>
+<b>Q26 — Credit Card Risks & Benefits:</b><br>
+Risks: High interest (36%+ per year if balance not cleared), card fraud/cloning, overspending, phishing attacks.<br>
+Benefits: Purchase protection (chargeback if product not delivered), reward points and cashback, EMI facility, build credit score, globally accepted.
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 5 — Create: Design Secure E-payment System & Walmart Case Study <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q28, Q29</div>
+<div class="qi"><span class="qno">Q28</span> Design a secure E-payment system for an online shopping website <span class="bdg bc">Create</span></div>
+<div class="qi"><span class="qno">Q29</span> Create a case-based solution on how Walmart uses E-commerce in its supply chain + suggest improvements <span class="bdg bc">Create</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Q28 — Secure E-payment System Design:</b>
+<ul><li><b>SSL/TLS encryption:</b> All data transmitted is encrypted (HTTPS mandatory)</li><li><b>Tokenization:</b> Card data replaced by tokens — real card numbers never stored on merchant server</li><li><b>2-Factor Authentication:</b> OTP on registered mobile for every transaction</li><li><b>Biometric Authentication:</b> Fingerprint/Face ID for mobile app payments</li><li><b>Firewall + Intrusion Detection System:</b> Monitor and block suspicious activity in real-time</li><li><b>PCI-DSS Compliance:</b> Follow Payment Card Industry Data Security Standards</li><li><b>Session Management:</b> Auto-logout after 10 minutes of inactivity</li><li><b>Regular Security Audits:</b> Quarterly penetration testing to find vulnerabilities</li><li><b>Fraud Detection AI:</b> Flag unusual transactions (e.g., payment from different country/IP)</li></ul>
+<b>Q29 — Walmart Supply Chain Case Study:</b><br>
+<b>How Walmart uses E-commerce in supply chain:</b>
+<ul><li>Real-time inventory tracking via RFID tags on every product</li><li>Automatic reorder triggered when stock drops below threshold</li><li>Blockchain technology for food traceability (track from farm to shelf in seconds)</li><li>AI-based demand forecasting — predicts what customers will need in each store</li><li>Direct supplier portal (Retail Link) for B2B ordering and collaboration</li><li>Walmart.com integrated with physical store inventory for same-day delivery/pickup</li></ul>
+<b>Suggested Improvements:</b>
+<ul><li>Implement drone delivery in suburban areas (already tested)</li><li>Use AI chatbots for supplier queries to reduce manual processing</li><li>Introduce carbon-neutral logistics tracking for ESG reporting</li><li>Expand dark stores (warehouse-only stores) for faster urban delivery</li></ul>
+</div>
+</div>
+</div>
+
+</div><!-- end unit 3 -->
+
+<!-- ===== UNIT 4 ===== -->
+<div class="uc" id="u3">
+<div class="unit-title">📕 Unit 4 — Digital Marketing: Branding, Advertising, Segmentation (Q1–Q29)</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 1 — E-branding <span class="cv">▼</span></div>
+<div class="gb op">
+<div class="ql">Q1, Q14, Q6, Q26</div>
+<div class="qi"><span class="qno">Q1</span> What is E-branding? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q14</span> Explain the concept of E-branding and its importance <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q6</span> Show how E-branding can be used to build customer loyalty <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q26</span> Evaluate the role of E-branding in building long-term business success <span class="bdg be">Evaluate</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>E-branding:</b> Creating and managing a brand's identity, image, and reputation through digital channels — website design, social media presence, consistent messaging, online reviews management, and digital content.<br><br>
+<b>Importance of E-branding:</b> In the digital age, a brand's online image is its first impression (95% of purchase decisions start with online research). Strong E-branding = trust = higher conversions = repeat customers.<br><br>
+<b>How E-branding Builds Customer Loyalty (Q6):</b>
+<ul><li>Consistent visual identity (same logo, colors, tone) across all platforms builds recognition</li><li>Engaging content (blogs, videos, stories) that emotionally connects with customers</li><li>Quick and empathetic response to reviews — both positive and negative</li><li>Loyalty programs tied to brand app (e.g., Starbucks rewards, Nykaa loyalty points)</li><li>User-generated content (customers posting with brand hashtag = authentic free promotion)</li><li>Personalized communication (birthday emails, "we miss you" messages)</li></ul>
+<b>E-branding for Long-term Success (Q26):</b> Companies like Apple, Zomato, Swiggy, and Nykaa have strong E-brands. Consistent digital identity creates emotional connection, reduces customer acquisition cost over time, creates brand ambassadors, and builds pricing power (customers pay premium for trusted brands). E-branding investment today = competitive advantage for years.
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 2 — E-advertising <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q7, Q11, Q16, Q24, Q25, Q27, Q28</div>
+<div class="qi"><span class="qno">Q11</span> Explain the concept of E-advertising in E-commerce <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q7</span> Analyze the effectiveness of E-advertising compared to traditional advertising <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q16</span> Show how a company can use E-advertising to promote a new product <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q24</span> Analyze ethical issues in E-advertising (privacy, misleading ads) <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q25</span> Assess the importance of legal frameworks and copyrights in E-advertising <span class="bdg be">Evaluate</span></div>
+<div class="qi"><span class="qno">Q27</span> Judge the effectiveness of targeted advertising in E-commerce <span class="bdg be">Evaluate</span></div>
+<div class="qi"><span class="qno">Q28</span> Design a complete E-advertising campaign for a new online business <span class="bdg bc">Create</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>E-advertising:</b> Paid promotional activities on digital platforms — Google Ads (Search/Display), Facebook/Instagram Ads, YouTube video ads, banner ads on websites, sponsored posts, and native advertising.<br><br>
+<b>E-advertising vs Traditional Advertising (Q7):</b>
+<ul><li>Cost: E-ad = ₹500 can reach 5,000 targeted people | TV ad = lakhs for untargeted mass reach</li><li>Targeting: E-ad = age, location, interests, behavior, device | Traditional = broad demographics only</li><li>ROI Tracking: E-ad = real-time (click rate, conversion rate, cost per acquisition) | Traditional = estimated/guesswork</li><li>Speed: E-ad = go live within hours | Traditional = weeks of production + booking</li><li>Personalization: E-ad = show different ads to different user segments | Traditional = one ad for all</li></ul>
+<b>Q16 — Promoting a New Product via E-advertising:</b>
+<ul><li>Teaser campaign on Instagram (countdown posts, mystery reveal)</li><li>YouTube pre-roll video ad (30-second product demo)</li><li>Google Search ads for users searching related terms</li><li>Facebook retargeting ads for website visitors who didn't purchase</li><li>Influencer unboxing video on launch day</li></ul>
+<b>Q24 — Ethical Issues in E-advertising:</b>
+<ul><li><b>Privacy violation:</b> Ads using browsing history/location without explicit user consent</li><li><b>Misleading ads:</b> Fake before/after images, exaggerated product claims, hidden terms</li><li><b>Data exploitation:</b> Cambridge Analytica scandal — Facebook user data used for political manipulation</li><li><b>Targeting vulnerable groups:</b> Gambling/alcohol/junk food ads targeting children and youth</li><li><b>Cookie tracking:</b> Third-party cookies tracking users across websites without knowledge</li></ul>
+<b>Q25 — Legal Frameworks in E-advertising:</b> India's IT Act 2000 + Personal Data Protection Bill govern digital data use in ads. ASCI (Advertising Standards Council of India) regulates misleading digital ads. Copyright law prevents using others' music, images, or content in ads without license. GDPR (EU) requires explicit consent before using user data for targeting. Non-compliance = heavy fines.<br><br>
+<b>Q27 — Effectiveness of Targeted Advertising:</b> Highly effective — targeted ads have 4–5x higher click-through rate than non-targeted. Amazon's product recommendation ads convert 30%+ of viewers. However, over-targeting ("creepy" ads that follow users) causes ad avoidance. Best when: relevant to user's genuine interest, shown at right time (retargeting after cart abandonment).<br><br>
+<b>Q28 — Complete E-advertising Campaign:</b><br>
+<b>Business:</b> "FitMeal" — Healthy meal delivery startup<br>
+<b>Campaign Goal:</b> 500 new customers in 30 days<br>
+<b>Target Audience:</b> Health-conscious professionals aged 25-40 in Mumbai/Pune<br>
+<b>Channels & Tactics:</b>
+<ul><li>Instagram video ads — 15-sec Reels showing meal prep + "Order now, first meal free"</li><li>Google Search ads — target "healthy food delivery near me" + "diet meal delivery"</li><li>YouTube pre-roll — 30-sec nutritionist testimonial ad</li><li>Email campaign — 10,000 emails to gym/yoga studio member lists</li><li>Facebook retargeting — re-engage website visitors who didn't order</li></ul>
+<b>Budget:</b> ₹30,000/month | <b>KPIs:</b> Click-through rate, cost per acquisition (target <₹200), conversion rate, customer lifetime value
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 3 — Market Segmentation & Online Marketing Research <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q8, Q9, Q5, Q12, Q17, Q19, Q21, Q22</div>
+<div class="qi"><span class="qno">Q9</span> What is market segmentation? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q8</span> What is online marketing research? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q5</span> Describe how online marketing research is conducted <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q12</span> Explain the importance of market segmentation in digital marketing <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q17</span> Explain how businesses use market segmentation to target customers online <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q19</span> Apply online marketing research techniques to understand customer preferences <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q21</span> Analyze the role of data analytics in online marketing research <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q22</span> Examine how market segmentation improves marketing efficiency <span class="bdg ba">Analyze</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Market Segmentation:</b> Dividing a broad market into smaller, distinct groups of customers sharing similar needs, characteristics, or behaviors — enabling targeted marketing.<br><br>
+<b>4 Types of Segmentation:</b>
+<ul><li><b>Demographic:</b> Age, gender, income, education (e.g., luxury brands target high-income group)</li><li><b>Geographic:</b> City, region, climate (e.g., winter clothing ads only in North India)</li><li><b>Psychographic:</b> Lifestyle, values, personality (e.g., eco-friendly products for environmentally conscious buyers)</li><li><b>Behavioral:</b> Purchase history, brand loyalty, usage rate (e.g., Amazon recommends based on past purchases)</li></ul>
+<b>Online Marketing Research:</b> Systematic process of collecting, analyzing, and interpreting digital data about customers, competitors, and markets to support marketing decisions.<br><br>
+<b>How It's Conducted (Q5 & Q19):</b>
+<ul><li>Google Analytics — track website visitor behavior, traffic sources, bounce rates</li><li>Online surveys — Google Forms, SurveyMonkey sent via email/social media</li><li>Social media listening — monitor brand mentions, hashtags, competitor comments</li><li>A/B testing — test two versions of ad/webpage to see which performs better</li><li>SEMrush/SimilarWeb — competitor analysis, keyword research</li><li>Customer feedback forms and Net Promoter Score (NPS) surveys</li></ul>
+<b>Role of Data Analytics (Q21):</b> Analytics tools (Google Analytics, Mixpanel) process large volumes of data to reveal: which products are viewed most, where customers abandon during checkout, what time they're most active, which ads convert best. Enables data-driven decisions vs guesswork.<br><br>
+<b>Segmentation Improving Marketing Efficiency (Q22):</b> Instead of spending ₹1 lakh on mass ads, a company spends ₹20,000 targeting exactly the right segment → higher click-through rate, higher conversion rate, lower cost per acquisition, better overall ROI. Nykaa targets beauty-conscious women 18-35 — not everyone. Precision = efficiency.
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 4 — Email Marketing & Internet Marketing Trends <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q10, Q13, Q3, Q15, Q18, Q2, Q4, Q20</div>
+<div class="qi"><span class="qno">Q10</span> What is email marketing? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q4</span> What are marketing strategies in E-commerce? <span class="bdg br">Remember</span></div>
+<div class="qi"><span class="qno">Q13</span> Describe the role of email marketing in customer engagement <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q15</span> Discuss current Internet marketing trends <span class="bdg br">Understand</span></div>
+<div class="qi"><span class="qno">Q3</span> Evaluate the effectiveness of email marketing in customer retention <span class="bdg be">Evaluate</span></div>
+<div class="qi"><span class="qno">Q18</span> Demonstrate how email marketing campaigns are created and delivered <span class="bdg bg">Apply</span></div>
+<div class="qi"><span class="qno">Q2</span> Analyze the impact of Internet marketing trends on business growth <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q20</span> Explain how a company can develop an effective online marketing strategy <span class="bdg bg">Apply</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Email Marketing:</b> Sending targeted, permission-based emails to a subscriber list to promote products, share updates, or nurture customer relationships. Highest ROI of any digital marketing channel (avg ₹42 return per ₹1 spent).<br><br>
+<b>E-commerce Marketing Strategies (Q4):</b> SEO, PPC/Google Ads, social media marketing, email marketing, affiliate marketing, influencer marketing, content marketing, WhatsApp marketing.<br><br>
+<b>Role in Customer Engagement (Q13):</b> Personalized emails — birthday discounts, abandoned cart reminders, "back in stock" alerts, new arrival newsletters — keep customers connected to the brand between purchases. Creates ongoing relationship, not just one-time transaction.<br><br>
+<b>Creating an Email Campaign (Q18):</b>
+<ol><li>Define campaign goal (new product launch / re-engage inactive customers)</li><li>Build/import email list (with opt-in consent)</li><li>Design template using Mailchimp, Brevo, or Sendinblue</li><li>Write compelling subject line ("Your cart is waiting 🛒") and clear CTA button</li><li>Segment list — send different emails to new vs returning customers</li><li>Schedule send time (Tuesday/Thursday 10 AM = highest open rates)</li><li>Track metrics: open rate, click rate, unsubscribe rate, conversion rate</li></ol>
+<b>Email Marketing for Retention (Q3):</b> Email marketing has 4x higher ROI than social media for retention because: direct inbox delivery (no algorithm), highly personalizable, can automate lifecycle messages (welcome → nurture → win-back sequence), measurable.<br><br>
+<b>Current Internet Marketing Trends (Q15 & Q2):</b>
+<ul><li><b>AI-powered personalization:</b> ChatGPT-based product recommendations and chatbots</li><li><b>Short-form video:</b> Instagram Reels, YouTube Shorts — highest engagement in 2025</li><li><b>Voice search optimization:</b> "Hey Alexa, where to buy…" — SEO must adapt</li><li><b>Micro-influencer marketing:</b> Nano/micro influencers (1K-100K followers) with authentic high engagement</li><li><b>WhatsApp Business marketing:</b> Direct customer communication at scale with catalogues</li><li><b>Vernacular/regional content:</b> Hindi, Marathi, Tamil content for tier-2 city reach</li></ul>
+<b>Impact on Business Growth (Q2):</b> Businesses using these trends see: 3x faster brand awareness growth, 2x better customer engagement, higher conversion rates, and reduced marketing costs compared to traditional methods. Companies ignoring digital trends lose market share rapidly.<br><br>
+<b>Developing an Effective Online Marketing Strategy (Q20):</b>
+<ul><li>Define target audience (demographics + psychographics + behavioral data)</li><li>Set SMART goals (e.g., 20% increase in online sales in 3 months)</li><li>Choose right channels (where target audience spends time)</li><li>Create quality content (blog, videos, infographics) consistently</li><li>Run paid campaigns + retarget website visitors</li><li>Measure results via Google Analytics, adjust strategy based on data</li><li>Build email list for owned audience not dependent on social algorithms</li></ul>
+</div>
+</div>
+</div>
+
+<div class="gc">
+<div class="gh" onclick="tg(this)">Group 5 — Compare E-marketing Strategies & LinkedIn Case Study <span class="cv">▼</span></div>
+<div class="gb">
+<div class="ql">Q23, Q29</div>
+<div class="qi"><span class="qno">Q23</span> Compare different E-marketing strategies used by companies <span class="bdg ba">Analyze</span></div>
+<div class="qi"><span class="qno">Q29</span> Create a case-based analysis explaining how LinkedIn operates as a business-oriented social network + suggest improvements <span class="bdg bc">Create</span></div>
+<div class="al">📖 Answer</div>
+<div class="ab">
+<b>Q23 — Comparison of E-marketing Strategies:</b>
+<ul><li><b>SEO:</b> Free/low cost, long-term results (3-6 months), sustainable organic traffic — best for content-rich businesses</li><li><b>PPC/Google Ads:</b> Paid, instant visibility, stops when budget ends — best for product launches and seasonal campaigns</li><li><b>Social Media Marketing:</b> Community building, brand awareness, high engagement — best for B2C brands with visual products</li><li><b>Email Marketing:</b> Highest ROI for retention, personalized, direct — best for existing customer base</li><li><b>Influencer Marketing:</b> Trust-based fast reach, authentic — best for new brands needing quick credibility</li><li><b>Content Marketing:</b> Builds authority, long-term SEO benefit, educates customers — best for complex/high-value products</li></ul>
+<b>Q29 — LinkedIn Case Study:</b><br>
+<b>How LinkedIn Operates:</b> LinkedIn is the world's largest professional social network (1 billion+ members). It is B2B-focused and operates as a platform for job searching, professional networking, thought leadership, and B2B marketing.<br><br>
+<b>Revenue Model:</b>
+<ul><li><b>Premium Subscriptions:</b> LinkedIn Premium (₹2,999/month), Sales Navigator (for sales teams), Recruiter (for HR) — for advanced search and InMail access</li><li><b>Talent Solutions:</b> Companies pay to post jobs and use AI-powered candidate matching tools</li><li><b>LinkedIn Learning:</b> Online courses platform — individual and enterprise subscriptions</li><li><b>B2B Advertising:</b> Sponsored Content, InMail ads, Lead Gen Forms — premium targeting by job title, company, industry</li></ul>
+<b>Key Features:</b> Professional profiles (digital resume), company pages, job board, thought leadership articles/posts, LinkedIn Groups, LinkedIn Live, InMail messaging.<br><br>
+<b>Suggested Improvements:</b>
+<ul><li>Add AI-powered skill gap analysis → suggest specific upskilling courses automatically</li><li>Launch a freelance marketplace (Gigs feature) to compete with Upwork/Fiverr within the professional trust network</li><li>Improve regional language support (Hindi, Marathi, Tamil) to penetrate tier-2 Indian cities and global emerging markets</li><li>Better content quality filters to reduce spam, fake job postings, and irrelevant motivational posts that reduce platform value</li><li>Introduce verified credential badges (integrated with universities) to improve hiring credibility</li></ul>
+</div>
+</div>
+</div>
+
+</div><!-- end unit 4 -->
+
+</div>
+<script>
+function su(i){
+  document.querySelectorAll('.uc').forEach((e,j)=>e.classList.toggle('on',i===j));
+  document.querySelectorAll('.tb').forEach((e,j)=>e.classList.toggle('on',i===j));
+}
+function tg(h){
+  const b=h.nextElementSibling;
+  const open=b.classList.toggle('op');
+  h.querySelector('.cv').textContent=open?'▲':'▼';
+}
+</script>
